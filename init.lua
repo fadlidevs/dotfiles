@@ -14,4 +14,9 @@ opt.termguicolors = true
 vim.g.mapleader = " "
 
 local map = vim.api.nvim_set_keymap
+-- to open Leexplore
 map("n","<leader>sf",":Lexplore<cr>",{})
+-- to quit neovim without save
+map("n","<leader>x",":q<cr>",{})
+-- to save file
+map("n","<leader>w",":w<cr>",{})
