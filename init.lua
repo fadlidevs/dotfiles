@@ -1,7 +1,16 @@
 --======================================
 --NEOVIM CONFIGURATON 		
 --======================================
+--plugins
+require('packer-mgr')
+require('nvim-autopairs-config')
+require('lualine-config')
 
+-- colorscheme 
+require('onedark').setup{
+	style='deep'
+}
+vim.cmd('colorscheme onedark')
 --Options 
 local opt = vim.opt
 
