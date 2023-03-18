@@ -13,10 +13,18 @@ require('onedark').setup{
 vim.cmd('colorscheme onedark')
 --Options 
 local opt = vim.opt
+local g = vim.g
+
+g.netrw_winsize = 20 
+g.netrw_banner = 0
 
 opt.number = true
 opt.cursorline = true
 opt.termguicolors = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
 
 --Keymaps
 --change leader key to <space> 
